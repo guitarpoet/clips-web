@@ -1,0 +1,20 @@
+[
+	{
+		"field": "id",
+		"label": "ID",
+		"state": "readonly",
+		"rules": [
+			{ "type":"number" },
+			"required"
+		]
+	},
+	{
+		"field": "name",
+		"label": "Name",
+		"rules": [
+			{ "type":"string" },
+			{ "maxlengh":"20" },
+			"required"
+		]
+	}
+]
