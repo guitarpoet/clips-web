@@ -7,7 +7,7 @@ use Clips\Libraries\DBModel;
  *
  * @author Jack
  * @version 1.0
- * @date Mon Mar 30 16:28:58 2015
+ * @date Mon Mar 30 19:13:23 2015
  *
  * @Clips\Model
  */

@@ -7,5 +7,14 @@
 			{ "maxlengh":"20" },
 			"required"
 		]
+	},
+	{
+		"field": "notes",
+		"label": "Notes",
+		"rules": [
+			{ "type":"string" },
+			{ "maxlengh":"1024" },
+			"required"
+		]
 	}
 ]

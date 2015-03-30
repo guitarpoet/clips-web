@@ -7,9 +7,9 @@ use Clips\Controller;
  *
  * @author Jack
  * @version 1.0
- * @date Mon Mar 30 16:30:36 2015
+ * @date Mon Mar 30 19:39:09 2015
  *
- * @Clips\Widget({"html", "lang", "grid"})
+ * @Clips\Widget({"html", "lang", "grid", "scaffold"})
  * @Clips\Model({ "group" });
  */
 class GroupController extends Controller {
@@ -19,6 +19,7 @@ class GroupController extends Controller {
 	 * @Clips\Actions("group")
 	 */
 	public function index() {
+		$this->title("Group List", true);
 		return $this->render('group/index');
 	}
 
@@ -27,9 +28,13 @@ class GroupController extends Controller {
 	 * @Clips\Actions("group")
 	 */
 	public function show($id) {
+		$this->title("Group Details for group $id", true);
 		$data = $this->group->load($id);
 		$this->formData("group_edit", $data);
-		return $this->render('group/show', array());
+		$args = array();
+		$args['data'] = $data;
+		$args['id'] = $id;
+		return $this->render('group/show', $args);
 	}
 
 	/**
@@ -37,6 +42,7 @@ class GroupController extends Controller {
 	 * @Clips\Actions("group")
 	 */
 	public function create() {
+		$this->title("Create Group", true);
 		return $this->render('group/create', array());
 	}
 
@@ -44,7 +50,7 @@ class GroupController extends Controller {
 	 * @Clips\Form("group_create")
 	 */
 	public function create_form() {
-		$this->user->insert($this->group->cleanFields('groups', $this->post()));
+		$this->group->insert($this->group->cleanFields('groups', $this->post()));
 		return $this->redirect(\Clips\site_url('group/index'));
 	}
 
@@ -53,6 +59,7 @@ class GroupController extends Controller {
 	 * @Clips\Actions("group")
 	 */
 	public function edit($id) {
+		$this->title("Edit Group for group $id", true);
 		$data = $this->group->load($id);
 		$this->formData("group_edit", $data);
 		return $this->render('group/edit', array());

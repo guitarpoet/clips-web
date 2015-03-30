@@ -5,6 +5,7 @@ environments:
     default_migration_table: phinxlog
     default_database: development
     production:
+        table_prefix: 'web_'
         adapter: mysql
         host: localhost
         name: web_live
@@ -14,6 +15,8 @@ environments:
         charset: utf8
 
     development:
+        table_prefix: 'web_'
+        adapter: mysql
         adapter: mysql
         host: localhost
         name: web_dev
@@ -23,6 +26,8 @@ environments:
         charset: utf8
 
     testing:
+        table_prefix: 'web_'
+        adapter: mysql
         adapter: mysql
         host: localhost
         name: web_test

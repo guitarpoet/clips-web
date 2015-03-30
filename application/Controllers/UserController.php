@@ -7,9 +7,9 @@ use Clips\Controller;
  *
  * @author Jack
  * @version 1.0
- * @date Mon Mar 30 16:30:36 2015
+ * @date Mon Mar 30 19:39:09 2015
  *
- * @Clips\Widget({"html", "lang", "grid"})
+ * @Clips\Widget({"html", "lang", "grid", "scaffold"})
  * @Clips\Model({ "user", "group" });
  */
 class UserController extends Controller {
@@ -19,6 +19,7 @@ class UserController extends Controller {
 	 * @Clips\Actions("user")
 	 */
 	public function index() {
+		$this->title("User List", true);
 		return $this->render('user/index');
 	}
 
@@ -27,9 +28,13 @@ class UserController extends Controller {
 	 * @Clips\Actions("user")
 	 */
 	public function show($id) {
+		$this->title("User Details for user $id", true);
 		$data = $this->user->load($id);
 		$this->formData("user_edit", $data);
-		return $this->render('user/show', array('groups' => $this->group->get()));
+		$args = array('groups' => $this->group->get());
+		$args['data'] = $data;
+		$args['id'] = $id;
+		return $this->render('user/show', $args);
 	}
 
 	/**
@@ -37,6 +42,7 @@ class UserController extends Controller {
 	 * @Clips\Actions("user")
 	 */
 	public function create() {
+		$this->title("Create User", true);
 		return $this->render('user/create', array('groups' => $this->group->get()));
 	}
 
@@ -53,6 +59,7 @@ class UserController extends Controller {
 	 * @Clips\Actions("user")
 	 */
 	public function edit($id) {
+		$this->title("Edit User for user $id", true);
 		$data = $this->user->load($id);
 		$this->formData("user_edit", $data);
 		return $this->render('user/edit', array('groups' => $this->group->get()));

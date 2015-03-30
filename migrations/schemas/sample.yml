@@ -6,7 +6,11 @@ groups:
         key: true
         options:
             limit: 20
-
+    notes:
+        label: Notes
+        type: string
+        options:
+            limit: 1024
 users:
     username:
         refer: true,
