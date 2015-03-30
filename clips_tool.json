@@ -1,0 +1,27 @@
+{
+	"table_prefix":"web_",
+	"namespace": ["Clips\\Web\\"],
+	"route_rules": ["application/rules/route.rules", "rules/route.rules"],
+	"filters": ["Rules", "Form", "Scss", "Css", "SmartyView", "MustacheView", "JsonView", "DirectView"],
+	"helpers":["web", "html"],
+	"default_view": "Smarty",
+	"debug_sass": true,
+	"sass_preload": ["variables"],
+	"models": {
+	},
+	"logger": {
+		"handlers": {
+			"Stream" : ["php://stdin", "debug"],
+			"FirePHP" : ["debug"],
+			"ChromePHP": ["debug"], 
+			"RotatingFile": ["/tmp/clips.log", 4, "debug"]
+		},
+		"processors": ["Git", "PsrLogMessage", "Introspection", "Tag"]
+	},
+	"datasources": {
+		"mysql": {
+			"type": "mysqli",
+			"database": "web_dev"
+		}
+	}
+}

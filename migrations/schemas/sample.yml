@@ -1,0 +1,29 @@
+groups:
+    name:
+        refer: true,
+        label: Name
+        type: string
+        key: true
+        options:
+            limit: 20
+
+users:
+    username:
+        refer: true,
+        label: Username
+        type: string
+        key: true
+        rules:
+            minlength: 4
+        options:
+            limit: 20
+    password:
+        label: Password
+        pagination: false
+        input_type: password
+        type: string
+        options:
+            limit: 60
+    group_id:
+        label: Group
+        foreign_key: groups
