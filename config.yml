@@ -1,4 +1,3 @@
-table_prefix: web_
 namespace:
     - Clips\Web
 route_rules:
@@ -17,10 +16,16 @@ filters:
 helpers:
     - web
     - html
-defualt_view: Smarty
+default_view: Smarty
 widget_cache: true
 sass_preload:
     - variables
+models:
+    user:
+        datasource: clips
+    group:
+        datasource: clips
+
 logger:
     handlers:
         Stream:
@@ -40,7 +45,13 @@ logger:
             - Introspection
             - Tag
 datasources:
+    default: clips
     mysql:
-        table_prefix: web_
-        type: mysqli
+        type: MySQLi
         database: web_dev
+    clips:
+        type: clips
+        datasource: mysql
+        table_prefix: web_
+        filters:
+            - prefix

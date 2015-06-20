@@ -1,11 +1,72 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "86b6c8d6d54d094c07da438ea2631b6f",
+    "hash": "8175dbd7cc5383516db8042b0ba95005",
     "packages": [
+        {
+            "name": "analog/analog",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jbroadway/analog.git",
+                "reference": "69615c0e8b4033169b45d58f778fd3ba638d1d52",
+                "mirrors": [
+                    {
+                        "url": "/%package%/%normalizedUrl%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jbroadway/analog/zipball/69615c0e8b4033169b45d58f778fd3ba638d1d52",
+                "reference": "69615c0e8b4033169b45d58f778fd3ba638d1d52",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "http://127.0.0.1:8000/repo/packagist/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "psr/log": "1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Analog": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Johnny Broadway",
+                    "email": "johnny@johnnybroadway.com",
+                    "homepage": "http://www.johnnybroadway.com/"
+                }
+            ],
+            "description": "PHP 5.3+ micro logging class that can be extended via closures. Includes several pre-built handlers including file, mail, syslog, HTTP post, and MongoDB.",
+            "homepage": "https://github.com/jbroadway/analog",
+            "keywords": [
+                "alerts",
+                "debug",
+                "debugging",
+                "error",
+                "log",
+                "logger",
+                "logging",
+                "syslog"
+            ],
+            "time": "2015-05-25 15:23:49"
+        },
         {
             "name": "cebe/markdown",
             "version": "1.0.1",
@@ -79,6 +140,73 @@
             "time": "2014-10-25 16:16:49"
         },
         {
+            "name": "curl/curl",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-mod/curl.git",
+                "reference": "67f7c490060751fbf24a02bc1ff3b32073aeb5e0",
+                "mirrors": [
+                    {
+                        "url": "/%package%/%normalizedUrl%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-mod/curl/zipball/67f7c490060751fbf24a02bc1ff3b32073aeb5e0",
+                "reference": "67f7c490060751fbf24a02bc1ff3b32073aeb5e0",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "http://127.0.0.1:8000/repo/packagist/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "squizlabs/php_codesniffer": "~2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Curl": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hassan Amouhzi",
+                    "email": "hassan@anezi.net",
+                    "homepage": "http://hassan.amouhzi.com"
+                },
+                {
+                    "name": "php-curl-class",
+                    "homepage": "https://github.com/php-curl-class"
+                },
+                {
+                    "name": "user52",
+                    "homepage": "https://github.com/user52"
+                }
+            ],
+            "description": "cURL class for PHP",
+            "homepage": "https://github.com/php-mod/curl",
+            "keywords": [
+                "curl",
+                "dot"
+            ],
+            "time": "2015-04-09 16:29:25"
+        },
+        {
             "name": "elkuku/console-progressbar",
             "version": "1.0",
             "source": {
@@ -140,7 +268,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/endroid/QrCode.git",
-                "reference": "79dba98d94f100c04345e13b0cf896c2e345d20e",
+                "reference": "7215a088a6908f95787ddc2c1c1f0d7fc41b8f13",
                 "mirrors": [
                     {
                         "url": "/%package%/%normalizedUrl%.%type%",
@@ -150,8 +278,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/endroid/QrCode/zipball/79dba98d94f100c04345e13b0cf896c2e345d20e",
-                "reference": "79dba98d94f100c04345e13b0cf896c2e345d20e",
+                "url": "https://api.github.com/repos/endroid/QrCode/zipball/7215a088a6908f95787ddc2c1c1f0d7fc41b8f13",
+                "reference": "7215a088a6908f95787ddc2c1c1f0d7fc41b8f13",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -171,8 +299,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Endroid": "src/"
+                "psr-4": {
+                    "Endroid\\": "src/Endroid/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -194,7 +322,7 @@
                 "qr",
                 "qrcode"
             ],
-            "time": "2015-03-27 23:43:36"
+            "time": "2015-06-02 19:03:54"
         },
         {
             "name": "garetjax/phpbrowscap",
@@ -316,12 +444,12 @@
             "time": "2014-07-13 19:02:31"
         },
         {
-            "name": "guitarpoet/clips-tool",
+            "name": "greenlion/php-sql-parser",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/guitarpoet/clips-tool.git",
-                "reference": "0cd6c191726db8a9ab02bd885f1f1118de63a998",
+                "url": "https://github.com/greenlion/PHP-SQL-Parser.git",
+                "reference": "25da67e0593602fcd1e7606c4e10480a03fb9c11",
                 "mirrors": [
                     {
                         "url": "/%package%/%normalizedUrl%.%type%",
@@ -331,8 +459,76 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guitarpoet/clips-tool/zipball/0cd6c191726db8a9ab02bd885f1f1118de63a998",
-                "reference": "0cd6c191726db8a9ab02bd885f1f1118de63a998",
+                "url": "https://api.github.com/repos/greenlion/PHP-SQL-Parser/zipball/25da67e0593602fcd1e7606c4e10480a03fb9c11",
+                "reference": "25da67e0593602fcd1e7606c4e10480a03fb9c11",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "http://127.0.0.1:8000/repo/packagist/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "analog/analog": "dev-master",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=4.0.14",
+                "squizlabs/php_codesniffer": ">=1.5.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PHPSQLParser\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "André Rothe",
+                    "email": "phosco@gmx.de",
+                    "homepage": "https://www.phosco.info",
+                    "role": "Committer"
+                },
+                {
+                    "name": "Justin Swanhart",
+                    "email": "greenlion@gmail.com",
+                    "homepage": "http://code.google.com/u/greenlion@gmail.com/",
+                    "role": "Owner"
+                }
+            ],
+            "description": "A pure PHP SQL (non validating) parser w/ focus on MySQL dialect of SQL",
+            "homepage": "http://code.google.com/p/php-sql-parser/",
+            "keywords": [
+                "creator",
+                "mysql",
+                "parser",
+                "sql"
+            ],
+            "time": "2014-09-23 07:48:11"
+        },
+        {
+            "name": "guitarpoet/clips-tool",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guitarpoet/clips-tool.git",
+                "reference": "434d3c3e8ee0d3159636f22467f582ef8bf00efb",
+                "mirrors": [
+                    {
+                        "url": "/%package%/%normalizedUrl%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guitarpoet/clips-tool/zipball/434d3c3e8ee0d3159636f22467f582ef8bf00efb",
+                "reference": "434d3c3e8ee0d3159636f22467f582ef8bf00efb",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -343,19 +539,21 @@
             },
             "require": {
                 "cebe/markdown": "1.0.1",
+                "curl/curl": "dev-master",
                 "elkuku/console-progressbar": "1.0",
                 "endroid/qrcode": "*",
                 "garetjax/phpbrowscap": "dev-master",
                 "gitonomy/gitlib": "0.1.7",
+                "greenlion/php-sql-parser": "dev-master",
                 "monolog/monolog": "1.12.0",
-                "mustache/mustache": "2.7.0",
                 "nikic/php-parser": "1.1.0",
                 "niktux/addendum": "0.4.4",
                 "robmorgan/phinx": "0.4.3",
                 "seld/jsonlint": "1.3.1",
                 "smarty/smarty": "3.1.21",
                 "symfony/config": "2.6.4",
-                "symfony/filesystem": "2.6.4"
+                "symfony/filesystem": "2.6.4",
+                "zordius/lightncandy": "dev-master"
             },
             "bin": [
                 "clips"
@@ -377,11 +575,12 @@
             "authors": [
                 {
                     "name": "Jack",
-                    "email": "guitarpoet@gmail.com"
+                    "email": "guitarpoet@gmail.com",
+                    "homepage": "https://www.thinkingcloud.info"
                 }
             ],
             "description": "The command framework based on php-clips extension.",
-            "time": "2015-03-30 06:37:53"
+            "time": "2015-06-19 11:27:01"
         },
         {
             "name": "monolog/monolog",
@@ -466,63 +665,6 @@
                 "psr-3"
             ],
             "time": "2014-12-29 21:29:35"
-        },
-        {
-            "name": "mustache/mustache",
-            "version": "v2.7.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/bobthecow/mustache.php.git",
-                "reference": "fdf41dd673dc99b41d60992470dbae94ae0b6ba1",
-                "mirrors": [
-                    {
-                        "url": "/%package%/%normalizedUrl%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/fdf41dd673dc99b41d60992470dbae94ae0b6ba1",
-                "reference": "fdf41dd673dc99b41d60992470dbae94ae0b6ba1",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "http://127.0.0.1:8000/repo/packagist/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "php": ">=5.2.4"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Mustache": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Justin Hileman",
-                    "email": "justin@justinhileman.info",
-                    "homepage": "http://justinhileman.com"
-                }
-            ],
-            "description": "A Mustache implementation in PHP.",
-            "homepage": "https://github.com/bobthecow/mustache.php",
-            "keywords": [
-                "mustache",
-                "templating"
-            ],
-            "time": "2014-08-26 19:50:10"
         },
         {
             "name": "nikic/php-parser",
@@ -645,7 +787,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "bf2c13de4300e227d7b2fd08027673a79c519987",
+                "reference": "9e45edca52cc9c954680072c93e621f8b71fab26",
                 "mirrors": [
                     {
                         "url": "/%package%/%normalizedUrl%.%type%",
@@ -655,8 +797,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/bf2c13de4300e227d7b2fd08027673a79c519987",
-                "reference": "bf2c13de4300e227d7b2fd08027673a79c519987",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/9e45edca52cc9c954680072c93e621f8b71fab26",
+                "reference": "9e45edca52cc9c954680072c93e621f8b71fab26",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -664,6 +806,9 @@
                         "preferred": true
                     }
                 ]
+            },
+            "require": {
+                "php": ">=5.3.0"
             },
             "type": "library",
             "extra": {
@@ -692,7 +837,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2015-03-26 14:39:45"
+            "time": "2015-06-02 13:48:41"
         },
         {
             "name": "robmorgan/phinx",
@@ -960,7 +1105,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "c5735dc28fec8117a686bbe6db71e3bb6de2a0a1",
+                "reference": "55f23664f20fe19336e00f1962f4d98330a9892e",
                 "mirrors": [
                     {
                         "url": "/%package%/%normalizedUrl%.%type%",
@@ -970,8 +1115,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/c5735dc28fec8117a686bbe6db71e3bb6de2a0a1",
-                "reference": "c5735dc28fec8117a686bbe6db71e3bb6de2a0a1",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/55f23664f20fe19336e00f1962f4d98330a9892e",
+                "reference": "55f23664f20fe19336e00f1962f4d98330a9892e",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1011,17 +1156,17 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony Console Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-03-22 16:55:57"
+            "homepage": "https://symfony.com",
+            "time": "2015-06-18 12:58:06"
         },
         {
             "name": "symfony/filesystem",
@@ -1084,12 +1229,11 @@
         },
         {
             "name": "symfony/process",
-            "version": "2.7.x-dev",
-            "target-dir": "Symfony/Component/Process",
+            "version": "2.8.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "e68470654c6ad2c402f3df90a4461966dfd38bec",
+                "reference": "dfd1a7f47a384968e876a256e524750841015155",
                 "mirrors": [
                     {
                         "url": "/%package%/%normalizedUrl%.%type%",
@@ -1099,8 +1243,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/e68470654c6ad2c402f3df90a4461966dfd38bec",
-                "reference": "e68470654c6ad2c402f3df90a4461966dfd38bec",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/dfd1a7f47a384968e876a256e524750841015155",
+                "reference": "dfd1a7f47a384968e876a256e524750841015155",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1118,11 +1262,11 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.7-dev"
+                    "dev-master": "2.8-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "Symfony\\Component\\Process\\": ""
                 }
             },
@@ -1132,17 +1276,17 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony Process Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-03-23 08:18:05"
+            "homepage": "https://symfony.com",
+            "time": "2015-06-18 16:14:27"
         },
         {
             "name": "symfony/yaml",
@@ -1151,7 +1295,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "1f2ce08b9e1ebdca0ffad35d5975c19b0f58daad",
+                "reference": "51a0a87882fae22c1f677fbcff9265b1d42d172f",
                 "mirrors": [
                     {
                         "url": "/%package%/%normalizedUrl%.%type%",
@@ -1161,8 +1305,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/1f2ce08b9e1ebdca0ffad35d5975c19b0f58daad",
-                "reference": "1f2ce08b9e1ebdca0ffad35d5975c19b0f58daad",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/51a0a87882fae22c1f677fbcff9265b1d42d172f",
+                "reference": "51a0a87882fae22c1f677fbcff9265b1d42d172f",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1194,17 +1338,76 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony Yaml Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-03-22 16:55:57"
+            "homepage": "https://symfony.com",
+            "time": "2015-06-18 12:58:06"
+        },
+        {
+            "name": "zordius/lightncandy",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zordius/lightncandy.git",
+                "reference": "b2fb300b20f75d4b7bd2d5fb6524a852733e9c8f",
+                "mirrors": [
+                    {
+                        "url": "/%package%/%normalizedUrl%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zordius/lightncandy/zipball/b2fb300b20f75d4b7bd2d5fb6524a852733e9c8f",
+                "reference": "b2fb300b20f75d4b7bd2d5fb6524a852733e9c8f",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "http://127.0.0.1:8000/repo/packagist/dists/%package%/%version%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.0.17"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/lightncandy.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Zordius Chen",
+                    "email": "zordius@yahoo-inc.com"
+                }
+            ],
+            "description": "An extremely fast PHP implementation of handlebars ( http://handlebarsjs.com/ ) and mustache ( http://mustache.github.io/ ).",
+            "homepage": "https://github.com/zordius/lightncandy",
+            "keywords": [
+                "handlebars",
+                "logicless",
+                "mustache",
+                "php",
+                "template"
+            ],
+            "time": "2015-06-18 10:09:34"
         }
     ],
     "packages-dev": [],
