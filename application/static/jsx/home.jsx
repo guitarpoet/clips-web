@@ -13,4 +13,4 @@ class Welcome extends React.Component {
 	}
 }
 
-exports([Welcome]);
+provides([Welcome], 'widgets', true);

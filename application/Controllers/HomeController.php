@@ -8,9 +8,12 @@ use Clips\Controller;
 class HomeController extends Controller {
 
 	/**
+	 * @Clips\Library("dataSource")
 	 * @Clips\Jsx({"application/static/jsx/home", "application/static/jsx/test"})
+	 * @Clips\DataGenerator("home/index")
 	 */
 	public function index() {
-		return $this->render('home');
+		$this->context('ds_names', array('hello'));
+		return $this->render('home', $this->data->{'home/index'});
 	}
 }

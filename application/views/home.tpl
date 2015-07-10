@@ -7,7 +7,7 @@
 											{literal}
 												<div>
 													<h1> Hello </h1>
-													<widgets.Welcome name="Andy" label=" is SB"/>
+													<widgets.Welcome name={datastore.get('hello')} />
 												</div>
 											{/literal}
 										{/jsx}
